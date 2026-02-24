@@ -1,16 +1,23 @@
 # simple calculator
 print("Simple Calulator")
-p1 = int(input("Enter p1 value"))
-p2 = int(input("Enter p2 value"))
-q = p1+p2 # Addition
-r = p1-p2 # subtraction
-s = p1*p2 # multiplication
-t = p1/p2 # division
-u = p1**p2 # power
-v = p1%p2 #reminder
-print("add",q)
-print("sub",r)
-print("mult",s)
-print("div",t)
-print("power",u)
-print("rem",v)
+a = float(input("Enter a value"))
+b = float(input("Enter b value"))
+print("1. Add")
+print("2. Sub")
+print("3. Product")
+print("4. Division")
+
+q = int(input("enter the choice"))
+if q==1:
+    print("add=", a+b)
+elif q==2:
+    print("sub=",a-b)
+elif q==3:
+    print("Mul=",a*b)
+elif q==4:
+    if b!=0:
+        print("Div=",a/b)
+    else:
+        print("Division by Zero is not Possible")
+else:
+    print("Invalid")
